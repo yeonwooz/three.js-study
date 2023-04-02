@@ -1,5 +1,7 @@
 # three.js study
-<!-- https://www.youtube.com/watch?v=ZGACJosABBw&list=PLe6NQuuFBu7HqxY10b6gNu6iisT2-rZv- -->
+
+- [참고한 자료](https://www.youtube.com/watch?v=vjKuk5Vp93k)
+
 
 
 
