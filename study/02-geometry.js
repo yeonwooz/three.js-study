@@ -1,6 +1,6 @@
 import * as THREE from "../build/three.module.js";
-//import { OrbitControls } from "../examples/jsm/controls/OrbitControls.js" // <---error
-import { OrbitControls } from "https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from "../examples/jsm/controls/OrbitControls.js";
+// import { OrbitControls } from "https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js";
 
 class App {
 	constructor() {
