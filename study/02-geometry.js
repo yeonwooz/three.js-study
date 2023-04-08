@@ -50,12 +50,12 @@ class App {
 			new THREE.WireframeGeometry(geometry),
 			lineMaterial
 		);
-		const group = new THREE.Group();
-		group.add(cube);
-		group.add(line);
+		// const group = new THREE.Group();
+		// group.add(cube);
+		// group.add(line);
 
-		this._scene.add(group);
-		this._cube = group;
+		this._scene.add(line);
+		this._cube = line;
 	}
 
 	resize() {
