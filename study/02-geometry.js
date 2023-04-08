@@ -47,7 +47,8 @@ class App {
 	}
 
 	_setupModel() {
-		const geometry = new THREE.BoxGeometry(1, 1, 1); // 정육면체
+		const geometry = new THREE.BoxGeometry(1, 1, 1, 2, 3, 3); // 정육면체
+		// x길이 y길이 z길이  /  x분할수 y분할수 z분할수 
 		const fillMaterial = new THREE.MeshPhongMaterial({ color: 0x515151 });
 		const cube = new THREE.Mesh(geometry, fillMaterial);
 
@@ -57,12 +58,12 @@ class App {
 			new THREE.WireframeGeometry(geometry),
 			lineMaterial
 		);
-		// const group = new THREE.Group();
-		// group.add(cube);
-		// group.add(line);
+		const group = new THREE.Group();
+		group.add(cube);
+		group.add(line);
 
-		this._scene.add(line);
-		this._cube = line;
+		this._scene.add(group);
+		this._cube = group;
 	}
 
 	resize() {
