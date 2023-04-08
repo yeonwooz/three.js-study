@@ -1,4 +1,6 @@
 import * as THREE from "../build/three.module.js";
+//import { OrbitControls } from "../examples/jsm/controls/OrbitControls.js" // <---error
+import { OrbitControls } from "https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js";
 
 class App {
 	constructor() {
@@ -16,6 +18,7 @@ class App {
 		this._setupCamera();
 		this._setupLight();
 		this._setupModel();
+		this._setupControls();
 
 		window.onresize = this.resize.bind(this);
 		this.resize();
@@ -37,6 +40,10 @@ class App {
 		const light = new THREE.DirectionalLight(color, intensity);
 		light.position.set(-1, 2, 4);
 		this._scene.add(light);
+	}
+
+	_setupControls() {
+		new OrbitControls(this._camera, this._divContainer);
 	}
 
 	_setupModel() {
@@ -78,8 +85,8 @@ class App {
 	update(time) {
 		// 현재시간
 		time *= 0.001; // 밀리초 -> 초단위로 변경
-		this._cube.rotation.x = time; // 회전값 현재시간으로 업데이트
-		this._cube.rotation.y = time; // 회전값 현재시간으로 업데이트
+		// this._cube.rotation.x = time; // 회전값 현재시간으로 업데이트
+		// this._cube.rotation.y = time; // 회전값 현재시간으로 업데이트
 	}
 }
 
