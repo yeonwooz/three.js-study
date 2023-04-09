@@ -24,7 +24,7 @@ if (WEBGL.isWebGLAvailable()) {
 		time *= 0.001;
 
 		renderer.render(scene, camera);
-		// requestAnimationFrame(render);  // <- 필요한지 ??
+		requestAnimationFrame(render);  // <- 재귀를 통한 애니메이션 루프
 	}
 	requestAnimationFrame(render);
 } else {
