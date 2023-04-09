@@ -4,6 +4,19 @@ Three.js는 웹 브라우저에서 3차원 컴퓨터 그래픽스 애니메이�
 사용자들의 즐거움과 몰입경험을 높일 수 있는 3D 인터랙션을 쉽게 구현할 수 있다. <br/>
 해당 프레임워크는 환경에 따라 최대한 GPU 를 사용하도록(requestAnimationFrame) 최적화되어있는 클래스와 메서드로 구성되어있다.
 
+### Renderer
+
+Camera, Scene 을 웹사이트에 렌더
+
+### Scene
+
+배경, 3D 오브젝트, 빛
+
+### Camera
+
+씬을 비추어 렌더러에 전달
+시야각, 종횡비, 카메라 시작 끝 지점, 카메라 위치 등을 설정할 수 있다.
+
 ## 참고한 자료
 
 - [GIS Developer](https://www.youtube.com/watch?v=vjKuk5Vp93k)
