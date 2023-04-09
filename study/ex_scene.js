@@ -19,7 +19,14 @@ if (WEBGL.isWebGLAvailable()) {
 
 	document.body.appendChild(renderer.domElement);
 
-	renderer.render(scene, camera);
+	// renderer.render(scene, camera);
+	function render(time) {
+		time *= 0.001;
+
+		renderer.render(scene, camera);
+		// requestAnimationFrame(render);  // <- 필요한지 ??
+	}
+	requestAnimationFrame(render);
 } else {
 	const warning = WEBGL.getErrorMessage();
 	document.body.appendChild(warning);
