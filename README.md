@@ -1,5 +1,9 @@
 # three.js study
 
+Three.js는 웹 브라우저에서 3차원 컴퓨터 그래픽스 애니메이션 응용을 만들고 표현하기 위해 사용되는 자바스크립트 라이브러리이자 API이다. <br/>
+사용자들의 즐거움과 몰입경험을 높일 수 있는 3D 인터랙션을 쉽게 구현할 수 있다. <br/>
+해당 프레임워크는 환경에 따라 최대한 GPU 를 사용하도록(requestAnimationFrame) 최적화되어있는 클래스와 메서드로 구성되어있다.
+
 ## 참고한 자료
 
 - [GIS Developer](https://www.youtube.com/watch?v=vjKuk5Vp93k)
